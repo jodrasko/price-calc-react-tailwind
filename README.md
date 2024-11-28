@@ -8,7 +8,6 @@ Price Calculator lets you instantly see how much you’ll save and what your fin
 - Clean and straightforward UI for ease of use
 - Optimized for various devices, ensuring functionality across smartphoens, tablets, and desktops
 - Designed with accessibility best practices to accomodate all users
-- Light/dark mode toggle
 
 ## Tech Stack
 

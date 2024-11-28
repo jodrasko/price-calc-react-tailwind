@@ -6,23 +6,3 @@ body {
   padding: 220px;
   background-color: #fcedda;
 }
-
-input {
-  outline: none;
-  border: solid 1px #ffa724;
-}
-
-input:valid {
-  outline: none;
-  border: solid 1px #ffa724;
-}
-
-input:invalid {
-  border-color: red;
-}
-
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 0.5rem;
-}
