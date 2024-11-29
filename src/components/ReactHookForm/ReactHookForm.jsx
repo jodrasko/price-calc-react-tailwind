@@ -52,8 +52,8 @@ const ReactHookForm = () => {
               <input
                 className={
                   errors.price
-                    ? "min-w-60 text-sm mx-3.5 px-4 py-2 md:pr-20 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
-                    : "min-w-60 text-sm mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800 rounded-lg mb-2"
+                    ? "min-w-60 text-sm md:max-xl:text-base mx-3.5 px-4 py-2 md:pr-20 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
+                    : "min-w-60 text-sm md:max-xl:text-base mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800 rounded-lg mb-2"
                 }
                 id="price"
                 type="text"
@@ -79,8 +79,8 @@ const ReactHookForm = () => {
               <input
                 className={
                   errors.discount
-                    ? "min-w-60 text-sm mx-3.5 px-4 py-2 md:pr-20 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
-                    : "min-w-60 text-sm mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
+                    ? "min-w-60 text-sm mx-3.5 md:max-xl:text-base px-4 py-2 md:pr-20 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
+                    : "min-w-60 text-sm mx-3.5 md:max-xl:text-base px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
                 }
                 id="discount"
                 type="text"
@@ -106,8 +106,8 @@ const ReactHookForm = () => {
               <input
                 className={
                   errors.tax
-                    ? "min-w-60 text-sm mx-3.5 px-4 py-2 md:pr-20 border-2  border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
-                    : "min-w-60 text-sm mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
+                    ? "min-w-60 text-sm mx-3.5 md:max-xl:text-base px-4 py-2 md:pr-20 border-2  border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
+                    : "min-w-60 text-sm md:max-xl:text-base mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
                 }
                 id="tax"
                 type="text"
