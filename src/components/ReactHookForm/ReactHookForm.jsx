@@ -37,23 +37,23 @@ const ReactHookForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="shadow-2xl items-center bg-sky-200 border-2 border-solid border-pink-400 p-8 md:p-10 lg:p-12 xl:p-12 gap-4 rounded">
-        <h1 className="font-serif text-4xl text-black p-3 m-b-5">
+    <div className="flex justify-evenly min-h-screen px-7 py-7">
+      <div className="shadow-2xl pt-6 bg-sky-200 border-2 border-solid border-pink-400 rounded">
+        <h1 className="font-serif font-black text-lg md:text-2xl px-20 py-6">
           Price Calculator
         </h1>
 
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
-          <div className=" space-y-4 font-mono text-lg font-semibold text-black py-7 row-auto">
+          <div className="flex-col justify-between space-y-4 font-mono py-3 px-7 lg:max-xl:px-8 row-auto">
             <div>
-              <h2 className="block text-lg md:text-xl font-semibold text-black ml-4 mb-2">
+              <h2 className="block font-mono text-sm md:text-lg font-semibold text-black ml-4 mb-2">
                 Original Price ($)
               </h2>
               <input
                 className={
                   errors.price
-                    ? "min-w-60 text-sm md:max-xl:text-base mx-3.5 px-4 py-2 md:pr-20 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
-                    : "min-w-60 text-sm md:max-xl:text-base mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800 rounded-lg mb-2"
+                    ? "min-w-60 text-xs md:max-xl:text-base mx-3.5 px-3 py-2 pr-10 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
+                    : "min-w-60 text-xs md:max-xl:text-base ml-3.5 px-3 py-2 pr-10 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800 rounded-lg mb-2"
                 }
                 id="price"
                 type="text"
@@ -67,20 +67,20 @@ const ReactHookForm = () => {
                 })}
               />
               {errors.price && (
-                <span className="lg:max-xl:block mb-2 ml-4 mt-2 text-red-500 text-sm md:text-base lg:max-xl:text-base">
+                <span className="md:max-xl:block mb-2 mt-2 ml-4 text-red-500 text-sm md:text-base lg:max-xl:text-base">
                   {errors.price.message}
                 </span>
               )}
             </div>
             <div>
-              <h2 className="block text-lg md:text-xl font-semibold text-black ml-4 mb-2">
+              <h2 className="block font-mono  text-sm md:text-lg font-semibold text-black ml-4 mb-2">
                 Sales Discount (%)
               </h2>
               <input
                 className={
                   errors.discount
-                    ? "min-w-60 text-sm mx-3.5 md:max-xl:text-base px-4 py-2 md:pr-20 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
-                    : "min-w-60 text-sm mx-3.5 md:max-xl:text-base px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
+                    ? "min-w-60 text-xs mx-3.5 md:max-xl:text-base px-4 py-2 pr-10 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
+                    : "min-w-60 text-xs md:max-xl:text-base ml-3.5 px-3 py-2 pr-10 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
                 }
                 id="discount"
                 type="text"
@@ -94,20 +94,20 @@ const ReactHookForm = () => {
                 })}
               />
               {errors.discount && (
-                <span className=" lg:max-xl:block mb-2 ml-4 mt-2 text-red-500 text-sm md:text-base lg:max-xl:text-base">
+                <span className="md:max-xl:block mb-2 mt-2 ml-4 text-red-500 text-sm md:text-base lg:max-xl:text-base">
                   {errors.discount.message}
                 </span>
               )}
             </div>
             <div>
-              <h2 className="block text-lg md:text-xl font-semibold text-black ml-4 mb-2">
+              <h2 className="block font-mono  text-sm md:text-lg font-semibold text-black ml-4 mb-2">
                 Total Sales Tax (%)
               </h2>
               <input
                 className={
                   errors.tax
-                    ? "min-w-60 text-sm mx-3.5 md:max-xl:text-base px-4 py-2 md:pr-20 border-2  border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
-                    : "min-w-60 text-sm md:max-xl:text-base mx-3.5 px-4 py-2 md:pr-20 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
+                    ? "min-w-60 text-xs mx-3.5 md:max-xl:text-base px-4 py-2 pr-10 border-2  border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
+                    : "min-w-60 text-xs md:max-xl:text-base ml-3.5 px-3 py-2 pr-10 border border-blue-500  focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-800  rounded-lg mb-2"
                 }
                 id="tax"
                 type="text"
@@ -121,29 +121,29 @@ const ReactHookForm = () => {
                 })}
               />
               {errors.tax && (
-                <span className="lg:max-xl:block mb-2 ml-4 mt-2 text-red-500  text-sm md:text-base lg:max-xl:text-base">
+                <span className="md:max-xl:block mb-2 mt-2 ml-4 text-red-500  text-sm md:text-base lg:max-xl:text-base">
                   {errors.tax.message}
                 </span>
               )}
             </div>
           </div>
 
-          <div className="p-5 pt-2 pb-7 mx-10">
+          <div className="mt-6 ml-24 md:max-lg:ml-24">
             <button
               type="submit"
-              className="w-40 px-4 py-2 md:px-6 md:py-3 md:ml-3 bg-yellow-300 font-serif text-black tracking-wide font-bold rounded-full border border-black hover:bg-yellow-200"
+              className="w-30 md:w-40 px-5 py-2 md:px-6 md:py-3 bg-yellow-300 text-sm md:max-xl:text-base font-serif text-black tracking-wide font-semibold rounded-full border border-black hover:bg-yellow-200"
             >
               Calculate
             </button>
           </div>
 
           {finalPrice && (
-            <div>
-              <h3 className="font-mono text-lg lg:text-xl xl:text-lg  font-semibold text-black px-5 py-2 row-auto">
+            <div className="flex-col justify-between font-mono py-3 px-8 pr-14 row-auto mt-6">
+              <h3 className="font-mono text-sm md:text-base lg:text-xl font-semibold text-black px-5 py-2 row-auto">
                 Final Sales Price
               </h3>
-              <div className="text-sm min-w-60 mx-5 px-4 py-2 md:pr-20 border border-blue-700 bg-white rounded-lg mb-2">
-                <h3 className="font-mono text-md font-semibold text-black">
+              <div className="min-w-60 text-xs md:max-xl:text-base ml-3.5 px-4 py-2 pr-10 border border-blue-700 bg-white rounded-lg">
+                <h3 className="font-mono text-xs md:max-xl:text-base font-semibold text-black">
                   ${finalPrice}
                 </h3>
               </div>
