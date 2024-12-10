@@ -37,8 +37,8 @@ const ReactHookForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-3">
-      <div className="w-full max-w-md mx-auto  bg-sky-200 border-2 border-solid border-pink-400 shadow-2xl rounded-2xl overflow-hidden">
+    <div className="flex items-center justify-center">
+      <div className="w-full max-w-md min-h-screen pt-10 pb-10 bg-sky-200 border-2 border-solid border-pink-400 shadow-2xl rounded-2xl overflow-hidden">
         <h1 className="font-serif font-bold text-center text-2xl p-4">
           Price Calculator
         </h1>
