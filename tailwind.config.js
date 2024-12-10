@@ -12,16 +12,16 @@ export default {
         md: { min: "768px", max: "1023px" },
         lg: { min: "1024px", max: "1279px" },
         xl: { min: "1280px" }
+      },
+      extend: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"]
+        },
+        gridTemplateColumns: {
+          "70/30": "70% 28%"
+        }
       }
     },
-    extend: {
-      fontFamily: {
-        sans: ["Roboto", "sans-serif"]
-      },
-      gridTemplateColumns: {
-        "70/30": "70% 28%"
-      }
-    }
-  },
-  plugins: []
+    plugins: []
+  }
 };
