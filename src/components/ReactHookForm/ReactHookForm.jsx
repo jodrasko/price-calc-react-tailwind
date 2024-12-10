@@ -94,7 +94,7 @@ const ReactHookForm = () => {
                 </label>
                 <input
                   className={`
-                  w-full px-3 py-2 border rounded-lg transition-all
+                  w-full border rounded-lg transition-all
                   ${
                     errors.discount
                       ? "text-xs md:max-2xl:text-base px-2 py-1 border-2 border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
@@ -130,7 +130,7 @@ const ReactHookForm = () => {
                 </label>
                 <input
                   className={`
-                  w-full space-y-2 px-3 py-2 border rounded-lg transition-all 
+                  w-full border rounded-lg transition-all 
                   ${
                     errors.tax
                       ? "text-xs md:max-2xl:text-base px-2 py-1 border-2  border-red-500 focus:outline-none focus:border-red-700 rounded-lg mb-2"
@@ -157,7 +157,7 @@ const ReactHookForm = () => {
           </div>
 
           {/* Calculate Button */}
-          <div className="ml-36 md:max-2xl:ml-20 pb-3">
+          <div className="flex items-center justify-center p-3">
             <button
               type="submit"
               className="w-50 md:max-2xl:w-3/4 mt-1 px-5 py-2 md:px-6 md:py-3 bg-yellow-300 text-sm md:max-xl:text-base font-serif text-black tracking-wide font-semibold rounded-full border border-black hover:bg-yellow-200"
