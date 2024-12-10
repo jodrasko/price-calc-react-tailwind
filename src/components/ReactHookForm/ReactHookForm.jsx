@@ -38,7 +38,7 @@ const ReactHookForm = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-full max-w-md min-h-screen pt-24 bg-sky-200 border-2 border-solid border-pink-400 shadow-2xl rounded-2xl overflow-hidden">
+      <div className="w-full max-w-md pt-16 pb-24 bg-sky-200 border-2 border-solid border-pink-400 shadow-2xl rounded-2xl overflow-hidden">
         <h1 className="font-serif font-bold text-center text-2xl p-4">
           Price Calculator
         </h1>
@@ -157,7 +157,7 @@ const ReactHookForm = () => {
           </div>
 
           {/* Calculate Button */}
-          <div className="flex items-center justify-center p-3">
+          <div className="flex items-center justify-center pt-2">
             <button
               type="submit"
               className="w-50 md:max-2xl:w-3/4 mt-1 px-5 py-2 bg-yellow-300 text-base font-serif text-black font-semibold rounded-full border border-black hover:bg-yellow-200"
@@ -168,7 +168,7 @@ const ReactHookForm = () => {
 
           {/* Result Display */}
           {finalPrice && (
-            <div className="space-y-2 pb-3">
+            <div className="space-y-2">
               <label className="block font-mono text-base font-semibold text-black ml-1">
                 Final Sales Price
               </label>
