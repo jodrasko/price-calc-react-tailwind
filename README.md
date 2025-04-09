@@ -37,10 +37,10 @@ Install Dependencies:
 
 Run the Application:
 
-- npm start
+- npm run dev
 
 The app should now be accessible at http://localhost:3000
 
 ## Authors
 
-- [Jovana D](https://www.github.com/jodrasko)
+- [Jovana Draskovic](https://www.github.com/jodrasko)

@@ -31,8 +31,12 @@ const ReactHookForm = () => {
   };
 
   const onSubmit = (data) => {
-    {
-      pressCount < maxPresses ? calculateDiscount(data) : null;
+    const discount =
+      data.discount === undefined || data.discount === "" ? "0" : data.discount;
+    const updatedData = { ...data, discount };
+
+    if (pressCount < maxPresses) {
+      calculateDiscount(updatedData);
     }
   };
 
@@ -102,13 +106,18 @@ const ReactHookForm = () => {
                   }`}
                   id="discount"
                   type="text"
-                  placeholder="Enter sales discount"
+                  placeholder="Optional: Enter sales discount"
                   {...register("discount", {
-                    required: "required",
+                    required: false,
                     pattern: {
-                      value: /^(\d{1,2})$/,
+                      value: /^[0-9]+(\.[0-9]{1,2})?$/,
                       message: "Invalid sales discount value entered."
-                    }
+                    },
+                    validate: (value) =>
+                      value === undefined ||
+                      value === "" ||
+                      (parseFloat(value) >= 0 && parseFloat(value) <= 100) ||
+                      "Discount must be between 0 and 100."
                   })}
                 />
                 {errors.discount && (
